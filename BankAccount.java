@@ -41,7 +41,7 @@ public class BankAccount {
 
     public void unfreezeAccount(){
         if(this.isFreezed){
-            isFreezed = false;
+            this.isFreezed = false;
             System.out.println("Account was successfully unfrozen.");
         } else {
             System.out.println("The account is not frozen.");
