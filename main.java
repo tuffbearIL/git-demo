@@ -6,7 +6,7 @@ public class main{
 
         bankAccount.addCash(300);
         bankAccount.removeCash(4444);
-        System.out.println(bankAccount.showCash());
+        System.out.println(bankAccount.getCash());
         bankAccount.addCash(22);
 
     }

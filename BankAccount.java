@@ -10,11 +10,11 @@ public class BankAccount {
         this.isFreezed = false;
     }
 
-    public int showCash(){
+    public int getCash(){
         return this.accountBalance;
     }
 
-    public String showOwner(){
+    public String getOwner(){
         return this.accountOwner;
     }
 
