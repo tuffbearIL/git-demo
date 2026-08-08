@@ -49,7 +49,11 @@ public class BankAccount {
     }
 
     public void removeCash(int amount){
-        if(this.accountBalance - amount > 0 && !this.isFreezed){
+        if(amount < 0){
+            return;
+        }
+
+        if(this.accountBalance - amount >= 0 && !this.isFreezed){
             this.accountBalance -= amount ;
             System.out.printf("Cash were succesfully removed from the cash account. New balance: %d$ \n ", this.accountBalance);
         } else {
